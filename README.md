@@ -1,1 +1,6 @@
-# exemplo_bash_script
+Primeiro torne o arquivo executável com o comando:
+
+`chmod +x teste.sh`
+
+Após isso rode com:
+`./teste.sh`
