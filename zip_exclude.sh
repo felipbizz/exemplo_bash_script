@@ -4,13 +4,18 @@
 ZIP_NAME="backup.zip"
 
 # Diretório a ser zipado
-TARGET_DIR="."
+TARGET_DIR="path/to/your/dir"
 
 # Arquivos ou padrões a serem excluídos
 EXCLUDES=(
+  "*/.venv/*"
   "*.log"  # Exemplo: exclua todos os arquivos .log
-  "temp/*" # Exemplo: exclua a pasta temp e seus arquivos
-  "*.tmp"  # Exemplo: exclua todos os arquivos .tmp
+  "*/reports/*" # Exemplo: exclua a pasta reports e seus arquivos
+  "*.csv"  
+  "*/parquet_files/*"
+  "*.parquet"
+  "*/npy_files/*"
+  "*.npy"
 )
 
 # Cria a lista de opções de exclusão para o comando zip
